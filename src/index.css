@@ -4,7 +4,7 @@
   --text-color: #3e3831;
   --accent-color: #a89486;
   --card-bg: #ece2d9;
-  --card-bg-glass: rgba(245, 238, 230, 0.32);
+  --card-bg-glass: rgba(216, 200, 180, 0.5);
   --border-color: #cbb4a6;
   --border-color-glass: rgba(203, 180, 166, 0.4);
 
@@ -32,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-reading);
+  font-family: var(--font-special);
   font-weight: 600;
   color: var(--text-color);
   margin-bottom: 0.5em;
@@ -136,8 +136,8 @@ a:hover {
     0 4px 24px rgba(180, 160, 140, 0.13),
     inset 0 0.5px 0 rgba(255, 255, 255, 0.35);
   margin-bottom: 2rem;
-  backdrop-filter: blur(16px) saturate(1.2);
-  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  backdrop-filter: blur(2px) saturate(1.2);
+  -webkit-backdrop-filter: blur(2px) saturate(1.2);
 }
 
 /* ==========================================
@@ -215,7 +215,6 @@ a:hover {
 }
 
 .home-timeline-heading {
-  font-family: var(--font-reading);
   font-size: 1.8rem;
   margin-bottom: 2rem;
 }
@@ -235,8 +234,8 @@ a:hover {
   border: 1px solid var(--border-color-glass);
   border-radius: 12px;
   background: var(--card-bg-glass);
-  backdrop-filter: blur(16px) saturate(1.2);
-  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  backdrop-filter: blur(2px) saturate(1.2);
+  -webkit-backdrop-filter: blur(2px) saturate(1.2);
   box-shadow:
     0 4px 24px rgba(180, 160, 140, 0.13),
     inset 0 0.5px 0 rgba(255, 255, 255, 0.35);

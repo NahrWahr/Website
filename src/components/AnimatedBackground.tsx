@@ -25,7 +25,6 @@ export default function AnimatedBackground() {
     const WARP_STRENGTH = 35;    // max displacement in px
     const NODE_RADIUS = 2.2;
     const LINE_COLOR = 'rgba(180, 158, 138, 0.14)';
-    const LINE_COLOR_STRONG = 'rgba(139, 121, 105, 0.25)';
     const NODE_COLOR = 'rgba(139, 121, 105, 0.22)';
     const NODE_HIGHLIGHT = 'rgba(114, 91, 72, 0.50)';
     const ARROW_SIZE = 5;
