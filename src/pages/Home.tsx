@@ -7,7 +7,7 @@ export default function Home() {
       {/* Profile Image */}
       <div className="home-profile-wrapper">
         <img
-          src="/images/profile.jpg"
+          src={`${import.meta.env.BASE_URL}images/profile.jpg`}
           alt="Rahul Narwar"
           className="home-profile-img"
           onError={(e) => {
@@ -42,7 +42,7 @@ export default function Home() {
           <a href="mailto:rnarwar.137@gmail.com">
             Email ↗
           </a>
-          <a href="/documents/RahulNarwar_Resume_AN.pdf" target="_blank" rel="noreferrer" className="home-resume-link">
+          <a href={`${import.meta.env.BASE_URL}documents/RahulNarwar_Resume_AN.pdf`} target="_blank" rel="noreferrer" className="home-resume-link">
             Resume (PDF) ⤵
           </a>
         </div>

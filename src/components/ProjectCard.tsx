@@ -104,7 +104,7 @@ export default function ProjectCard({ title, description, link, imageUrl }: Proj
         <canvas ref={canvasRef} style={{ display: 'block' }} />
         {imageUrl && (
           <img
-            src={imageUrl}
+            src={imageUrl.startsWith('/') ? `${import.meta.env.BASE_URL}${imageUrl.slice(1)}` : imageUrl}
             alt={`${title} preview`}
             className="project-card-img"
           />

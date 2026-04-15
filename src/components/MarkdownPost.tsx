@@ -42,6 +42,14 @@ export default function MarkdownPost({ backLink, backLabel, contentFiles, conten
         <ReactMarkdown
           remarkPlugins={[remarkMath]}
           rehypePlugins={[rehypeKatex, rehypeRaw]}
+          components={{
+            img: ({ src, ...props }) => {
+              const resolvedSrc = src?.startsWith('/')
+                ? `${import.meta.env.BASE_URL}${src.slice(1)}`
+                : src;
+              return <img src={resolvedSrc} {...props} />;
+            },
+          }}
         >
           {content}
         </ReactMarkdown>
