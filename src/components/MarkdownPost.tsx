@@ -3,7 +3,6 @@ import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import rehypeRaw from 'rehype-raw';
-import PretextHeader from './PretextHeader';
 import { parseFrontmatter } from '../utils/mdParser';
 
 interface MarkdownPostProps {
@@ -36,7 +35,7 @@ export default function MarkdownPost({ backLink, backLabel, contentFiles, conten
         ← {backLabel}
       </Link>
 
-      <PretextHeader text={data.title || 'Untitled'} />
+      <h1 className="post-title">{data.title || 'Untitled'}</h1>
 
       <div className="prose">
         <ReactMarkdown
